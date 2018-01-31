@@ -1,6 +1,6 @@
 // 1. DOMを操作しよう
 // h1の中のテキストをconsole.logで表示しよう。
-
+console.log(document.getElementsByTagName('h1')[0].childNodes[0].nodeValue);
 // 2. DOMを変更しよう
 // h1の中のテキストを "Hello from Tanukiti" に変更しよう。
 
