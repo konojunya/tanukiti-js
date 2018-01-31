@@ -8,9 +8,9 @@ document.querySelector("h1").textContent = "Hello from Tanukiti";
 // h1とpの間にpタグで何か好きな文章を追加しよう。
 var pElem = document.createElement("p");
 var h1 = document.getElementsByTagName('h1')[0];
-// var textNode = document.createTextNode('ふもっふ！！');
 pElem.textContent = "ふもっふ！！";
 h1.parentNode.insertBefore(pElem, h1.nextSibling);
-// p.insertBefore(textNode);
 // 4. DOMを削除しよう
 // 一番下のpタグを削除しよう。
+var del = document.getElementsByTagName('p')[1];
+del.parentNode.removeChild(del);
