@@ -6,6 +6,11 @@ console.log(document.getElementsByTagName('h1')[0].childNodes[0].nodeValue);
 document.querySelector("h1").textContent = "Hello from Tanukiti";
 // 3. DOMを追加しよう
 // h1とpの間にpタグで何か好きな文章を追加しよう。
-
+var pElem = document.createElement("p");
+var h1 = document.getElementsByTagName('h1')[0];
+// var textNode = document.createTextNode('ふもっふ！！');
+pElem.textContent = "ふもっふ！！";
+h1.parentNode.insertBefore(pElem, h1.nextSibling);
+// p.insertBefore(textNode);
 // 4. DOMを削除しよう
 // 一番下のpタグを削除しよう。
